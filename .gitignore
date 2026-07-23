@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# LeetCode session cookies (only if you use cookie auth instead of browser auth)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# PyCharm
+.idea/

@@ -1,0 +1,20 @@
+author: Jula
+language: en
+code:
+  lang: python3
+  # -> solutions/0001.two-sum/
+  filename_template: '{{ .Id | padWithZero 4 }}{{ if .SlugIsMeaningful }}.{{ .Slug }}{{ end }}'
+  separate_description_file: true
+  modifiers:
+    - name: removeUselessComments
+  python3:
+    out_dir: solutions
+    executable: python3
+leetcode:
+  site: https://leetcode.com
+  credentials:
+    from:
+      - browser
+    browsers: []
+editor:
+  use: none
