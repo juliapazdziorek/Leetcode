@@ -1,3 +1,7 @@
+# On Windows, run recipes through cmd instead of the default `sh` (which isn't installed).
+# Ignored on macOS/Linux, so this file stays portable.
+set windows-shell := ["cmd.exe", "/c"]
+
 # Show the list of recipes.
 default:
     @just --list
