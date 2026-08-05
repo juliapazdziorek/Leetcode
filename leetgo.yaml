@@ -15,6 +15,7 @@ leetcode:
   credentials:
     from:
       - browser
+      - cookies
     browsers: []
 editor:
   use: none
