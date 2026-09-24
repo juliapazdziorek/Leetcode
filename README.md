@@ -20,11 +20,13 @@ Leetcode/
     └── <id>.<slug>/
         ├── solution.py
         ├── question.md
+        ├── notes.md
         └── testcases.txt
 ```
 
 - `solutions/<id>.<slug>/` – one folder per problem, numbered the way LeetCode numbers them, e.g. `0001.two-sum`.
 - `solution.py` – my solution to the problem.
+- `notes.md` – my notes: topics, the idea behind the solution, time/space complexity and pitfalls.
 - `question.md` and `testcases.txt` – the problem statement and its test cases, both pulled down automatically.
 - `leetgo.yaml` and `justfile` – the tooling that scaffolds, tests and submits problems.
 
@@ -35,5 +37,6 @@ Problems are fetched, tested and submitted with [leetgo](https://github.com/j178
 ```sh
 just new 1 # fetch problem #1 into solutions/0001.two-sum/
 just test # run its test cases locally
-just submit # submit the solution to LeetCode
+just submit # submit the solution to LeetCode (reminds you to write notes.md if accepted)
+just review # revisit a random solved problem: question -> notes -> code
 ```
